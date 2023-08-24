@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flexBox - WDEV</title>
+    <link rel="stylesheet" href="./css/defaultGrid.css" type="text/css" />
+
+    <style>
+
+.blur{
+    filter: blur(10px);
+}
+
+.brightness{
+    filter: brightness(200%);
+}
+
+.contrast{
+    filter: contrast(200%);  
+}
+
+.grayscale{
+    filter: grayscale(80%);
+}
+
+.opacity{
+    filter: opacity(10%);
+}
+
+.saturate{
+    filter: saturate(150%);
+}
+
+.sepia{
+    filter: sepia(70%);
+}
+
+.hueRotate{
+    filter: hue-rotate(110deg);
+}
+
+.dropShadow{
+    filter: drop-shadow(10px 10px 10px #000);
+}
+
+.brightnesContrast{
+    filter: brightness(150%) contrast(150%) hue-rotate(50deg);
+
+}
+.blurTransition{
+    filter: blur(10px);
+    transition: filter 0.2s;
+}
+
+.blurTransition:hover{
+    filter: blur(0px);
+}
+
+@keyframes hueRotateAnimation{
+    from {filter:hue-rotate(0deg)}
+    to {filter:hue-rotate(360deg)}
+}
+
+.hueRotateAnimate{
+    animation: hueRotateAnimation 2s linear infinite;
+}
+
+    </style>
+</head>
+<body>
+    <h1>fILTROS EM CSS</h1>
+
+    <h2>Blur</h2>
+    <img class="blur" src="img/html-css-js.png">
+
+    <hr>
+
+    <h2>Brightness</h2>
+    <img class="brightness" src="img/html-css-js.png">
+
+    <hr>
+
+    <h2>Contrast</h2>
+    <img class="contrast" src="img/html-css-js.png">
+
+    <hr>
+
+    <h2>Grayscale</h2>
+    <img class="grayscale" src="img/html-css-js.png">
+
+    <hr>
+    
+    <h2>Opacity</h2>
+    <img class="opacity" src="img/html-css-js.png">
+
+    <hr>
+        
+    <h2>Saturate</h2>
+    <img class="saturate" src="img/html-css-js.png">
+
+    <hr>
+        
+    <h2>Sepia</h2>
+    <img class="sepia" src="img/html-css-js.png">
+
+    <hr>
+        
+    <h2>Hue rotate</h2>
+    <img class="hueRotate" src="img/html-css-js.png">
+
+    <hr>
+            
+    <h2>Drop Shadow</h2>
+    <img class="dropShadow" src="img/html-css-js.png">
+
+    <hr>
+            
+    <h2>Brightness + Contrast</h2>
+    <img class="brightnesContrast" src="img/html-css-js.png">
+
+    <hr>
+    
+    <h2>Blur + Transition</h2>
+    <img class="blurTransition" src="img/html-css-js.png">
+
+    <hr>
+        
+    <h2>Hue rotate + animate</h2>
+    <img class="hueRotateAnimate" src="img/html-css-js.png">
+
+    <hr>
+
+</body>
+</html>

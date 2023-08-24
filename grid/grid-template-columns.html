@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template Columns - WDEV</title>
+    <link rel="stylesheet" href="./css/defaultGrid.css" type="text/css" />
+
+    <style>
+     .gridContainer{
+        display: grid;
+     }
+
+     .exemplo1{
+        grid-template-columns: 30px 50px 80px 60px;
+     }
+
+     .exemplo2{
+        grid-template-columns: 10% 50% 30% 10%;
+     }
+
+     .exemplo3{
+        grid-template-columns: 1fr 2fr 1fr 4fr;
+     }
+
+     .exemplo4{
+        grid-template-columns: repeat(3, 1fr) 3fr;
+     }
+
+     .exemplo5{
+        grid-template-columns: minmax(150px, 1fr) 1fr 2fr 1fr;
+     }
+
+     .exemplo6{
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+     }
+
+     .exemplo7{
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+     }
+    </style>
+</head>
+<body>
+    <h1>Grid Template Columns</h1>
+
+    <h2>Exemplo 1: tamanho em pixels</h2>
+
+    <div class="gridContainer exemplo1">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="green">3</div>
+        <div class="yellow">4</div>
+    </div>
+
+    <hr>
+
+    <h2>Exemplo 2: tamanho em Porcentagem</h2>
+
+    <div class="gridContainer exemplo2">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="green">3</div>
+        <div class="yellow">4</div>
+    </div>
+
+    <hr>
+
+    <h2>Exemplo 3: tamanho em frações de espaço</h2>
+
+    <div class="gridContainer exemplo3">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="green">3</div>
+        <div class="yellow">4</div>
+    </div>
+
+    <hr>
+
+    <h2>Exemplo 4: repeat</h2>
+
+    <div class="gridContainer exemplo4">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="green">3</div>
+        <div class="yellow">4</div>
+    </div>
+
+    <hr>
+
+    <h2>Exemplo 5: tamanho minimo e maximo</h2>
+
+    <div class="gridContainer exemplo5">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="green">3</div>
+        <div class="yellow">4</div>
+    </div>
+
+    <hr>
+
+    <h2>Exemplo 6: auto-fit</h2>
+
+    <div class="gridContainer exemplo6">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="green">3</div>
+        <div class="yellow">4</div>
+    </div>
+
+    <hr>
+
+    <h2>Exemplo 7: auto-fill</h2>
+
+    <div class="gridContainer exemplo7">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="green">3</div>
+        <div class="yellow">4</div>
+    </div>
+</body>
+</html>

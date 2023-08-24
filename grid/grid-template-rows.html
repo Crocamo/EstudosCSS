@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template Columns - WDEV</title>
+    <link rel="stylesheet" href="./css/defaultGrid.css" type="text/css" />
+
+    <style>
+     .gridContainer{
+        display: grid;
+     }
+
+     .exemplo1{
+        grid-template-rows: 30px 50px 150px 200px;
+     }
+
+     .exemplo2{
+        grid-template-rows: 1fr 4fr 2fr 4fr;
+     }
+
+    </style>
+</head>
+<body>
+    <h1>Grid Template rows</h1>
+
+    <h2>Exemplo 1: tamanho em pixels</h2>
+
+    <div class="gridContainer exemplo1">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="green">3</div>
+        <div class="yellow">4</div>
+    </div>
+
+    <hr>
+
+    <h2>Exemplo 2: tamanho em frações de espaço</h2>
+
+    <div class="gridContainer exemplo2">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="green">3</div>
+        <div class="yellow">4</div>
+    </div>
+
+    <hr>
+
+
+
+    
+</body>
+</html>

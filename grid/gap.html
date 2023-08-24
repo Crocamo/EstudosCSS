@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template Columns - WDEV</title>
+    <link rel="stylesheet" href="./css/defaultGrid.css" type="text/css" />
+
+    <style>
+     .gridContainer{
+        display: grid;
+     }
+
+     .exemplo1{
+      grid-template: 
+      "vermelho verde" 50px
+      "amarelo azul" 100px
+      / 2fr 1fr;
+      gap:20px;
+     }
+
+     .exemplo2{
+      grid-template: 
+      "azul verde verde verde" 80px
+      "azul amarelo vermelho vermelho" 60px
+      / 1fr 3fr 3fr 1fr;
+      column-gap: 10px;
+      row-gap: 40px;
+     }
+
+     .itemRed{
+        grid-area: vermelho;
+     }
+
+     .itemBlue{
+        grid-area: azul;
+     }
+
+     .itemGreen{
+        grid-area: verde;
+     }
+
+     .itemYellow{
+        grid-area: amarelo;
+     }
+
+    </style>
+</head>
+<body>
+    <h1>Gap</h1>
+
+    <h2>Exemplo 1: 20px para colunas e linhas</h2>
+
+    <div class="gridContainer exemplo1">
+        <div class="red itemRed">1</div>
+        <div class="blue itemBlue">2</div>
+        <div class="green itemGreen">3</div>
+        <div class="yellow itemYellow">4</div>
+    </div>
+
+    <hr>
+
+    <h2>Exemplo 2: Template</h2>
+
+    <div class="gridContainer exemplo2">
+        <div class="red itemRed">1</div>
+        <div class="blue itemBlue">2</div>
+        <div class="green itemGreen">3</div>
+        <div class="yellow itemYellow">4</div>
+    </div>
+
+    <hr>
+
+</body>
+</html>

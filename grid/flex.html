@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flexBox - WDEV</title>
+    <link rel="stylesheet" href="./css/defaultGrid.css" type="text/css" />
+
+    <style>
+        .flexContainer{
+            display: flex;
+        }
+
+        .directionColumn{
+            flex-direction: column;
+            height: 300px;
+        }
+
+        .red{
+            flex:1;
+        }
+        
+        .blue{
+            flex:2;
+        }
+        .yellow{
+            flex:3;
+        }
+        .green{
+            flex:4;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flex</h1>
+
+    <h2>Flex Row</h2>
+    <div class="flexContainer">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="yellow">3</div>
+        <div class="green">4</div>
+    </div>
+
+    <hr>
+
+    <h2>Flex Column</h2>
+    <div class="flexContainer directionColumn">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="yellow">3</div>
+        <div class="green">4</div>
+    </div>
+
+    <hr>
+
+</body>
+</html>
